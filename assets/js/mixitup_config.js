@@ -1,7 +1,5 @@
 (function($) {
-
 $(document).ready(function() {
-
 
 var containerEl = document.querySelector('.mixitup_container');
 var radiosFilter = document.querySelector('.controls');
@@ -13,8 +11,5 @@ radiosFilter.addEventListener('change', function() {
     mixer.filter(selector);
 });
 
-
-
 }); //document.ready
-
 })( jQuery );

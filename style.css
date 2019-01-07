@@ -82,7 +82,7 @@ h3{
 
 .section_heading{
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 2.57rem;
   font-family: "Source Sans Pro";
   color: rgb(106, 106, 106);
   font-weight: bold;
@@ -838,13 +838,6 @@ input[type="radio"]:checked+label{
   background-color: #e74c3c;
 }
 /* End Owlcarousel slide togglers */
-/* Start test classes fp Owlcarousel */
-.test{
-  border: 3px dotted red;
-}
-
-
-/* End test classes fp Owlcarousel */
 /* End new_casestudy_section */
 /* Start numbers_section */
 .numbers_section{
@@ -1487,7 +1480,7 @@ textarea{
 
 /* Media Query */
 /* Start max-width: 575px */
-@media only screen and (max-width: 575px)  {
+@media (max-width: 575px)  {
 .mainscreen_heading{
   font-size: 12vw;
 }
@@ -1557,7 +1550,7 @@ border-color: transparent transparent #e74c3c transparent;
 } /* End max-width: 575px */
 
 /* Start max-width: 767px */
-@media only screen and (max-width: 767px)  {
+@media (max-width: 767px)  {
 .mainscreen_heading{
   font-size: 8vw;
 }
@@ -1654,7 +1647,7 @@ footer .copyright_block{
 }
 
 
-.timeline_item_1.timeline_item:hover:before{
+.timeline_item:hover:before.timeline_item_1{
   content: "";
   position: absolute;
   width: 55px;
@@ -1695,7 +1688,7 @@ footer .copyright_block{
 } /* End max-width: 767px*/
 
 /* Start max-width: 991px*/
-@media only screen and (max-width: 991px)  {
+@media (max-width: 991px)  {
 .mainscreen_heading{
   font-size: 7vw;
 }
@@ -1707,18 +1700,10 @@ footer .copyright_block{
 } /* End max-width: 991px*/
 
 /* Start max-width: 992px and min-width: 1199px */
-@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+@media (min-width: 992px) and (max-width: 1199px)  {
 
 .portfolio_item_text{
   font-size: 0.9em;
 }
 
 }/* End max-width: 992px and min-width: 1199px */
-
-/* TEST */
-.under_constraction.mainscreen_section{
- padding-top: 40px;
- min-height: 100vh;
-}
-
-/* End TEST */
