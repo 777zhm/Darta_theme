@@ -2,8 +2,15 @@
 <section>
 	<div class="numbers_section" style="background-image: url('wp-content/themes/darta/assets/img/numbers_bg.jpg');">
 		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="numbers_header text-center">
+						<h2 class="section_heading">Numbers</h2>
+					</div>
+				</div>
+			</div>
 			<div class="row justify-content-center text-center">
-				<div class="col">
+				<div class="col-md-2 col-4">
 					<div class="numbers_item_box">
 						<div class="numbers_item_icon_box">
 							<img src="<?php echo get_template_directory_uri().'/assets/img/numbers_icon_1.png'?>" alt="numbers_icon_1">
@@ -16,7 +23,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-md-2 col-4">
 					<div class="numbers_item_box">
 						<div class="numbers_item_icon_box">
 							<img src="<?php echo get_template_directory_uri().'/assets/img/numbers_icon_2.png'?>" alt="numbers_icon_2">
@@ -29,7 +36,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-md-2 col-4">
 					<div class="numbers_item_box">
 						<div class="numbers_item_icon_box">
 							<img src="<?php echo get_template_directory_uri().'/assets/img/numbers_icon_3.png'?>" alt="numbers_icon_3">
@@ -42,7 +49,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-md-2 col-4">
 					<div class="numbers_item_box">
 						<div class="numbers_item_icon_box">
 							<img src="<?php echo get_template_directory_uri().'/assets/img/numbers_icon_4.png'?>" alt="numbers_icon_4">
@@ -55,7 +62,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-md-2 col-4">
 					<div class="numbers_item_box">
 						<div class="numbers_item_icon_box">
 							<img src="<?php echo get_template_directory_uri().'/assets/img/numbers_icon_5.png'?>" alt="numbers_icon_5">

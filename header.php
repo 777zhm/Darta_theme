@@ -8,14 +8,18 @@
 	</head>
 <body>
 	<header id="header">
-		<div class="row justify-content-center text-center">
-			<div class="col-12 text-center">
+		<div class="row justify-content-center">
+			<div class="col-md-3 col-4">
 				<div class="logotype_box">
-					<img src="<?php echo get_template_directory_uri().'/assets/img/logotype.png'?>" alt="logotype">
-				 
+					<img class="img img-fluid" src="<?php echo get_template_directory_uri().'/assets/img/logotype.png'?>" alt="logotype">
 				</div>
+			</div>
+			<div class="col-md-9 col-8">
 				<div class="main_menu">
 					<?php wp_nav_menu( array('theme_location' => 'main_menu') ); ?>
+				</div>
+				<div class="main_menu_toggler">
+					<img class="img" src="<?php echo get_template_directory_uri().'/assets/img/main_menu_toggler.svg'?>" alt="main_menu_toggler">
 				</div>
 			</div>
 		</div>	

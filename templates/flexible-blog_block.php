@@ -12,7 +12,7 @@
 				</div>
 			</div>
 			<div class="row blog_block">
-				<div class="col-md-6 blog_item">
+				<div class="col-lg-6 blog_item">
 					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_1.jpg');">
 					</div>
 					<div class="blog_item_text">
@@ -24,7 +24,7 @@
 						<a class="read_more" href="#">Read More &gt;&gt;</a>
 					</div>
 				</div>
-				<div class="col-md-6 blog_item">
+				<div class="col-lg-6 blog_item">
 					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_2.jpg');"></div>
 					<div class="blog_item_text">
 						<a class="blog_item_category" href="#">art / t-shirt</a>
@@ -35,7 +35,7 @@
 						<a href="#">Read More &gt;&gt;</a>
 					</div>
 				</div>
-				<div class="col-md-6 blog_item">
+				<div class="col-lg-6 blog_item">
 					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_3.jpg');"></div>
 					<div class="blog_item_text">
 						<a class="blog_item_category" href="#">art / t-shirt</a>
@@ -46,7 +46,7 @@
 						<a href="#">Read More &gt;&gt;</a>
 					</div>
 				</div>
-				<div class="col-md-6 blog_item">
+				<div class="col-lg-6 blog_item">
 					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_4.jpg');"></div>
 					<div class="blog_item_text">
 						<a class="blog_item_category" href="#">art / t-shirt</a>

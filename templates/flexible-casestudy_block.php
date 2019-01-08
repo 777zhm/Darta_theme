@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-10">
+				<div class="col-md-6 col-12">
 					<div class="casestudy_slide_block">
 						<div class="owl-carousel owl-theme">
 							<div class="slider_item text-center">

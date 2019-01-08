@@ -93,6 +93,32 @@ add_filter( 'script_loader_tag', 'darta_script_loader_tag', 10, 2 );
 
 
 
-include_once 'includes/acf_reg_blocks.php';
+add_action('acf/init', 'my_acf_init');
+function my_acf_init() {
+    
+    // check function exists
+    if( function_exists('acf_register_block') ) {
+        // register a testimonial block
+        acf_register_block(array(
+            'name'              => 'testimonial',
+            'title'             => __('Testimonial'),
+            'description'       => __('A custom testimonial block.'),
+         //   'render_callback'   => 'custom_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'testimonial', 'quote' ),
+        ));
+    }
+}
+function custom_block_render_callback( $block ) {
+	// Remove "acf/" from name so we can use a path-friendly slug
+	$slug = str_replace( 'acf/', '', $block['name'] );
+	
+	// include a template part from within the "template-parts/block" folder
+	if( file_exists( STYLESHEETPATH . "/blocks/templates/{$slug}.php" ) ) {
+		include( STYLESHEETPATH . "/blocks/templates/{$slug}.php" );
+	}
+}
+
 
 ?>

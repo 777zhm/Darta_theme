@@ -12,89 +12,110 @@
 				</div>
 			</div>
 			<div class="row justify-content-around">
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1.png'?>" alt="partners_1" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1g.png'?>" alt="partners_1g" class="img img-fluid">
-					</div>
-				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2.png'?>" alt="partners_2" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2g.png'?>" alt="partners_2g" class="img img-fluid">
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1.png'?>" alt="partners_1" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1g.png'?>" alt="partners_1g" class="img img-fluid">
+						</div>
 					</div>
 				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3.png'?>" alt="partners_3" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3g.png'?>" alt="partners_3g" class="img img-fluid">
-					</div>
-				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4.png'?>" alt="partners_4" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4g.png'?>" alt="partners_4g" class="img img-fluid">
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2.png'?>" alt="partners_2" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2g.png'?>" alt="partners_2g" class="img img-fluid">
+						</div>
 					</div>
 				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5.png'?>" alt="partners_5" class="img img-fluid">
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3.png'?>" alt="partners_3" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3g.png'?>" alt="partners_3g" class="img img-fluid">
+						</div>
 					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5g.png'?>" alt="partners_5g" class="img img-fluid">
+				</div>
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4.png'?>" alt="partners_4" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4g.png'?>" alt="partners_4g" class="img img-fluid">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5.png'?>" alt="partners_5" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5g.png'?>" alt="partners_5g" class="img img-fluid">
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-around">
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1.png'?>" alt="partners_1" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1g.png'?>" alt="partners_1g" class="img img-fluid">
-					</div>
-				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2.png'?>" alt="partners_2" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2g.png'?>" alt="partners_2g" class="img img-fluid">
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1.png'?>" alt="partners_1" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_1g.png'?>" alt="partners_1g" class="img img-fluid">
+						</div>
 					</div>
 				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3.png'?>" alt="partners_3" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3g.png'?>" alt="partners_3g" class="img img-fluid">
-					</div>
-				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4.png'?>" alt="partners_4" class="img img-fluid">
-					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4g.png'?>" alt="partners_4g" class="img img-fluid">
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2.png'?>" alt="partners_2" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_2g.png'?>" alt="partners_2g" class="img img-fluid">
+						</div>
 					</div>
 				</div>
-				<div class="partner_item col-md-2 col-4">
-					<div class="normal_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5.png'?>" alt="partners_5" class="img img-fluid">
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3.png'?>" alt="partners_3" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_3g.png'?>" alt="partners_3g" class="img img-fluid">
+						</div>
 					</div>
-					<div class="grey_img">
-						<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5g.png'?>" alt="partners_5g" class="img img-fluid">
+				</div>
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4.png'?>" alt="partners_4" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_4g.png'?>" alt="partners_4g" class="img img-fluid">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-4 partner_item_box">
+					<div class="partner_item">
+						<div class="normal_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5.png'?>" alt="partners_5" class="img img-fluid">
+						</div>
+						<div class="grey_img">
+							<img src="<?php echo get_template_directory_uri().'/assets/img/partners/partners_5g.png'?>" alt="partners_5g" class="img img-fluid">
+						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </section>
