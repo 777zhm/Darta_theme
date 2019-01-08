@@ -59,7 +59,9 @@
 					</div>
 				</div>
 				<div>
-					<div class="casestudy_slide_bg" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
+					<div class="casestudy_slide_bg slide_1_bg" data-number="1" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
+					<div class="casestudy_slide_bg slide_2_bg" data-number="2" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
+					<div class="casestudy_slide_bg slide_3_bg" data-number="3" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
 				</div>
 			</div>
 		</div>
