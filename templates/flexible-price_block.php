@@ -1,6 +1,6 @@
 
 <section>
-	<div class="price_section">
+	<div class="price_section" id="price">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">

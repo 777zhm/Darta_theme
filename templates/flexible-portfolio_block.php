@@ -1,11 +1,11 @@
 
 <section>
-	<div class="portfolio_section">
+	<div class="portfolio_section" id="portfolio">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
 						<div class="portfolio_header text-center">
-							<h2 class="section_heading">Recent Works</h2>
+							<h2 class="section_heading">Portfolio</h2>
 							<p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
 							<div class="title_dot"></div>
 						</div>

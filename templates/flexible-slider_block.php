@@ -1,17 +1,17 @@
 
 <section>
-	<div class="casestudy_section">
+	<div class="slider_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h2 class="section_heading">Case study</h2>
+					<h2 class="section_heading">Slider</h2>
 					<p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
 					<div class="title_dot"></div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-12">
-					<div class="casestudy_slide_block">
+					<div class="slider_slide_block">
 						<div class="owl-carousel owl-theme">
 							<div class="slider_item text-center">
 								<div class="square_decorative_box">
@@ -59,9 +59,10 @@
 					</div>
 				</div>
 				<div>
-					<div class="casestudy_slide_bg slide_1_bg" data-number="1" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
-					<div class="casestudy_slide_bg slide_2_bg" data-number="2" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
-					<div class="casestudy_slide_bg slide_3_bg" data-number="3" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
+					<!-- Owl carousel indexes 0,2,3,4 - classes are slide_0, slide_2, slide_n -->
+					<div class="slider_slide_bg slide_0 slide_2" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_1.jpg);"></div>
+					<div class="slider_slide_bg slide_3" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_2.jpg);"></div>
+					<div class="slider_slide_bg slide_4" style="background-image: url(wp-content/themes/darta/assets/img/slider_bg_3.jpg);"></div>
 				</div>
 			</div>
 		</div>

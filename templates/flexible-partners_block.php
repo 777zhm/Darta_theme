@@ -5,7 +5,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-7 col-md-9 col-sm-11">
 						<div class="price_header text-center">
-							<h2 class="section_heading">Great Integrations with Others</h2>
+							<h2 class="section_heading">Partners</h2>
 							<p>Suspendisse sed eros mollis, tincidunt felis eget, interdum erat. Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec. </p>
 							<div class="title_dot"></div>
 						</div>

@@ -1,6 +1,6 @@
 
 <section>
-	<div class="team_section">
+	<div class="team_section" id="team">
 		<div class="text-center">
 			<h2 class="section_heading">Our team</h2>
 			<p class="section_subheading">Meet the craziest team. Share your thoughts with them.</p>

@@ -1,11 +1,11 @@
 
 <section>
-	<div class="keepintouch_section">
+	<div class="form_section" id="form">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="price_header text-center">
-						<h2 class="section_heading">Keep in touch</h2>
+						<h2 class="section_heading">Form</h2>
 						<p>Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
 						<div class="title_dot"></div>
 					</div>
