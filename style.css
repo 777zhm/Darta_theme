@@ -1052,15 +1052,15 @@ color: #e74c3c;
 }
 
 /* End price_section */
-/* Start team_section */
-.team_section{
+/* Start graph_section */
+.graph_section{
   background-color: #202020;  
 }
 
-.team_section .section_heading{
+.graph_section .section_heading{
   padding-top: 130px;
 }
-.team_section .section_subheading{
+.graph_section .section_subheading{
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(244, 245, 249);
@@ -1068,7 +1068,7 @@ color: #e74c3c;
   margin-bottom: 0;
 }
 
-.team_section .title_dot{
+.graph_section .title_dot{
   margin-bottom: 12px;
 }
 
@@ -1171,15 +1171,15 @@ color: #e74c3c;
   position: absolute;
 }
 
-/* End team_section */
-/* Start partners_section */
-.partners_section{
+/* End graph_section */
+/* Start technologies_section */
+.technologies_section{
   background-color: #f4f5f9;
   padding-top: 150px;
   padding-bottom: 70px;
 }
 
-.partners_section p{
+.technologies_section p{
   color: #999999;
   font-family: "Open Sans";
   font-size: 14px;
@@ -1187,13 +1187,13 @@ color: #e74c3c;
   line-height: 21px;
 }
 
-.partner_item_box{
+.technology_item_box{
   padding-left: 5px;
   padding-right: 5px;
 }
 
 
-.partner_item{
+.technology_item{
   position: relative;
   height: 100px;
   background-color: #fff;
@@ -1201,7 +1201,7 @@ color: #e74c3c;
   margin-bottom: 20px;
 }
 
-.partner_item img{
+.technology_item img{
   margin: auto;
   position: absolute;
   top: 0;
@@ -1210,15 +1210,15 @@ color: #e74c3c;
   right: 0;
 }
 
-.partner_item:hover{
+.technology_item:hover{
   background-color: #e74c3c;
 }
 
-.partner_item:hover .grey_img {
+.technology_item:hover .grey_img {
   display: none;
 }
 
-/* End partners_section */
+/* End technologies_section */
 /* Start blog_section */
 .blog_section{
   background-color: #f4f5f9;
@@ -1362,6 +1362,12 @@ a.read_more{
   background-color: #f4f5f9;
 }
 
+.form_section h3{
+  color: #e74e3e;
+  font-family: "Source Sans Pro";
+  margin-bottom: 20px;
+}
+
 .form_section p{
   color: #999999;
   font-family: "Open Sans";
@@ -1370,16 +1376,14 @@ a.read_more{
   line-height: 21px;
 }
 
-
 .form_section .title_dot{
   margin-top: 28px;
   margin-bottom: 68px;
 }
 
-.form_section h3{
-  color: #e74e3e;
-  font-family: "Source Sans Pro";
-  margin-bottom: 20px;
+.equal{
+  display: flex;
+  display: -webkit-flex;
 }
 
 .form_section .contact_item p{
@@ -1392,7 +1396,8 @@ a.read_more{
 
 .contact_box{
   background-color: #ffffff;
-  padding-left: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 50px;
   padding-bottom: 35px;
   margin-bottom: 20px;
@@ -1522,12 +1527,6 @@ header{
 
 .mainscreen_heading{
   font-size: 7vw;
-}
-
-
-
-.formcontact_box{
-  padding-bottom: 74px;
 }
 
 .blog_item:nth-child(even)

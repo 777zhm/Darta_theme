@@ -1,9 +1,9 @@
 
 <section>
-	<div class="team_section" id="team">
+	<div class="graph_section" id="graph">
 		<div class="text-center">
-			<h2 class="section_heading">Our team</h2>
-			<p class="section_subheading">Meet the craziest team. Share your thoughts with them.</p>
+			<h2 class="section_heading">Our graph</h2>
+			<p class="section_subheading">Meet the craziest graph. Share your thoughts with them.</p>
 			<div class="title_dot"></div>
 		</div>
 		<div class="timeline">

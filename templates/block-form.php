@@ -12,7 +12,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-5 col-md-6 equal">
 					<div class="contact_box">
 						<div class="contact_item">
 							<h3>Our address</h3>
@@ -29,7 +29,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">     
+				<div class="col-lg-5 col-md-6 equal">     
 					<div class="formcontact_box">
 						<form id="formcontact" action="#" method="post" class="formcontact needs-validation" novalidate="">
 							<div class="row justify-content-center">
