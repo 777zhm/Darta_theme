@@ -27,7 +27,7 @@
 		<?php endwhile; else : ?>
 		404
 		<?php endif; ?>
-		<p>Template: single.php</p>
+		<p>Template: single-portfolio.php</p>
 	</main>
 </div>
 

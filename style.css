@@ -110,6 +110,10 @@ header{
   padding-bottom: 6px;
   z-index: 999;
 }
+
+#primary{
+  padding-top: 64px;
+}
 /* Start class for jQuery */
 .menu_fixed{
   background-color: rgba(70,70,70, 0.7);
@@ -1687,6 +1691,16 @@ footer .copyright_block{
   height: 93vw;
 }
 
+.svg_figure{
+  display: none;
+}
+
+.timeline_box{
+  background-color: rgb(231, 76, 60, 0.102);
+  overflow: hidden;
+}
+
+
 .timeline_item_1{
   bottom: 32%;
   left: 10%;   
@@ -1717,23 +1731,16 @@ footer .copyright_block{
   position: absolute;
 }
 
-.timeline_item_text{
+.timeline_item:before{
+  content: "";
   position: absolute;
-  display: none;
-  color: #ffffff;
-  width: 120px;
-  height: 40px;
+  width: 40px;
+  height: 1px;
+  background-color: rgb(255, 255, 255, 0.25);
+  left: -40px;
+  bottom: 50%;
+  margin: auto;
   text-align: center;
-  top: 8px;
-  left: -170px;
-}
-
-.timeline_item_text{
-  position: absolute;
-  display: none;
-  color: #ffffff;
-  width: 100px;
-  left: -140px;
 }
 
 .timeline_item:hover:before{
@@ -1748,6 +1755,28 @@ footer .copyright_block{
   text-align: center;
 }
 
+.timeline_item_text{
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  top: 8px;
+  left: -140px;
+}
+
+.timeline_item_1.timeline_item:before{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: rgb(255, 255, 255, 0.25);
+  left: 40px;
+  bottom: 50%;
+  margin: auto;
+  text-align: center;
+}
 
 .timeline_item_1.timeline_item:hover:before{
   content: "";
@@ -1763,7 +1792,7 @@ footer .copyright_block{
 
 .timeline_item_1 .timeline_item_text{
   position: absolute;
-  display: none;
+  display: block;
   color: #ffffff;
   width: 100px;
   top: 8px;
