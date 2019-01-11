@@ -1,18 +1,28 @@
+<?php
+/**
+ * Block Name: History
+ *
+ * This is the template that displays the history block.
+ */
+
+$image = get_field('image');
+$heading = get_field('heading');
+$editor = get_field('editor');
+$buttontext = get_field('buttontext');
+
+?>
 
 <section>
 	<div class="history_section" id="history">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<img class="img img-fluid monitor_mockap" src="<?php echo get_template_directory_uri().'/assets/img/monitor_mockap.png'?>" alt="monitor_mockap">
+					<img class="img img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>
 				<div class="col-md-7">
-					<h2 class="section_heading left_red_border">Our history</h2>
-					<div class="history_text">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard dummy text ever since the 1500s, when an unk- nown printer took a galley of type and scrambled it to make a type specimen book. </p>
-					<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					</div>
-					<button class="button first_button">Browse our work</button>
+					<h2 class="section_heading left_red_border"><?php echo $heading; ?></h2>
+					<div class="history_text"><?php echo $editor; ?></div>
+					<button class="button first_button"><?php echo $buttontext; ?></button>
 				</div>
 			</div>
 		</div>

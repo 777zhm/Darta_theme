@@ -111,9 +111,9 @@ header{
   z-index: 999;
 }
 
-#primary{
+/*#primary{
   padding-top: 64px;
-}
+}*/
 /* Start class for jQuery */
 .menu_fixed{
   background-color: rgba(70,70,70, 0.7);
@@ -513,9 +513,7 @@ text-align: right;
   margin-bottom: 20px;
 }
 
-
-
-.monitor_mockap{
+.history_section img{
   padding-right: 30px;
 }
 /* End features_section */
