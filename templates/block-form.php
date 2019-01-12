@@ -1,34 +1,43 @@
+<?php
+/**
+ * Block Name: Form
+ *
+ * This is the template that displays the form block.
+ */
 
+$heading = get_field('heading');
+$subheading = get_field('subheading');
+
+?>
 <section>
 	<div class="form_section" id="form">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="price_header text-center">
-						<h2 class="section_heading">Form</h2>
-						<p>Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
+						<h2 class="section_heading"><?php echo $heading; ?></h2>
+						<p><?php echo $subheading; ?></p>
 						<div class="title_dot"></div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
+				<?php if( have_rows('contacts') ): ?>
 				<div class="col-lg-5 col-md-6 equal">
 					<div class="contact_box">
+					<?php while( have_rows('contacts') ): the_row(); 
+						// vars
+						$heading = get_sub_field('heading');
+						$editor = get_sub_field('editor');
+					?>
 						<div class="contact_item">
-							<h3>Our address</h3>
-							<p>House #13, Streat road, Sydney<br>
-							2310 Australia</p>
+							<h3><?php echo $heading; ?></h3>
+							<?php echo $editor; ?>
 						</div>
-						<div class="contact_item">
-							<h3>Call us</h3>
-							<p>+ 880 168 109 1425<br>+ 0216809142</p>
-						</div>
-						<div class="contact_item">
-							<h3>Email us</h3>
-							<p>contactus@email.com</p>
-						</div>
+					<?php endwhile; ?>
 					</div>
 				</div>
+				<?php endif; ?>
 				<div class="col-lg-5 col-md-6 equal">     
 					<div class="formcontact_box">
 						<form id="formcontact" action="#" method="post" class="formcontact needs-validation" novalidate="">

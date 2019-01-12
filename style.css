@@ -868,7 +868,9 @@ input[type="radio"]:checked+label{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.numbers_header .section_heading{
+.numbers_header .section_heading,
+.numbers_header p
+{
   color: #ffffff;
 }
 
@@ -1198,8 +1200,8 @@ color: #e74c3c;
 .technology_item{
   position: relative;
   height: 100px;
-  background-color: #fff;
-  box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.1);
+/*  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.1);*/
   margin-bottom: 20px;
 }
 
@@ -1210,10 +1212,11 @@ color: #e74c3c;
   bottom: 0;
   left: 0;
   right: 0;
+  max-height: 150px;
 }
 
 .technology_item:hover{
-  background-color: #e74c3c;
+
 }
 
 .technology_item:hover .grey_img {

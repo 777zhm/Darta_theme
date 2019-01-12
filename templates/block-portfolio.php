@@ -1,12 +1,22 @@
+<?php
+/**
+ * Block Name: Portfolio
+ *
+ * This is the template that displays the portfolio block.
+ */
 
+$heading = get_field('heading');
+$subheading = get_field('subheading');
+
+?>
 <section>
 	<div class="portfolio_section" id="portfolio">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
 						<div class="portfolio_header text-center">
-							<h2 class="section_heading">Portfolio</h2>
-							<p>It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
+							<h2 class="section_heading"><?php echo $heading; ?></h2>
+							<p><?php echo $subheading; ?></p>
 							<div class="title_dot"></div>
 						</div>
 				</div>
