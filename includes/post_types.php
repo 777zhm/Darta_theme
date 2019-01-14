@@ -5,16 +5,16 @@ function custom_post_type(){
 
 	register_post_type('portfolio', array(
 		'labels'             => array(
-			'name'               => 'portfolio', // Основное название типа записи
-			'singular_name'      => 'portfolio item', // отдельное название записи типа Book
-			'add_new'            => 'Add portfolio item',
-			'add_new_item'       => 'Add new portfolio item',
-			'edit_item'          => 'Edit portfolio item',
-			'new_item'           => 'New portfolio item',
-			'view_item'          => 'View portfolio item',
-			'search_items'       => 'Search portfolio item',
-			'not_found'          => 'Portfolio items not found',
-			'not_found_in_trash' => 'Portfolio items not found in trash',
+			'name'               => 'Portfolio', // Основное название типа записи
+			'singular_name'      => 'project', // отдельное название записи типа Book
+			'add_new'            => 'Add project',
+			'add_new_item'       => 'Add new project',
+			'edit_item'          => 'Edit project',
+			'new_item'           => 'New project',
+			'view_item'          => 'View project',
+			'search_items'       => 'Search project',
+			'not_found'          => 'Projects not found',
+			'not_found_in_trash' => 'Projects not found in trash',
 			'parent_item_colon'  => '',
 			'menu_name'          => 'Portfolio'
 
@@ -30,7 +30,7 @@ function custom_post_type(){
 		'hierarchical'       => false,
 		'menu_position'      => 57,
 		'supports'           => array('title','editor','thumbnail'),
-		'menu_icon'			 => 'dashicons-images-alt'
+		'menu_icon'			 => 'dashicons-admin-links'
 	) );
 
 }

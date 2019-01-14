@@ -14,11 +14,11 @@ $subheading = get_field('subheading');
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
-						<div class="portfolio_header text-center">
-							<h2 class="section_heading"><?php echo $heading; ?></h2>
-							<p><?php echo $subheading; ?></p>
-							<div class="title_dot"></div>
-						</div>
+					<div class="portfolio_header text-center">
+						<h2 class="section_heading"><?php echo $heading; ?></h2>
+						<?php echo $subheading; ?>
+						<div class="title_dot"></div>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -72,30 +72,7 @@ $subheading = get_field('subheading');
 						<div class="portfolio_item_desc">Web design</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 portfolio_item mix portfolio_wordpress" style='background-image: url("wp-content/themes/darta/assets/img/works_item_5.png")'>
-					<div class="portfolio_item_text">
-						<h3 class="portfolio_item_heading">Wordpress 2</h3>
-						<div class="portfolio_item_desc">Wordpress</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 portfolio_item mix portfolio_plugins" style='background-image: url("wp-content/themes/darta/assets/img/works_item_6.png")'>
-					<div class="portfolio_item_text">
-						<h3 class="portfolio_item_heading">Plugin 2</h3>
-						<div class="portfolio_item_desc">Plugins</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 portfolio_item mix portfolio_vuejs" style='background-image: url("wp-content/themes/darta/assets/img/works_item_7.png")'>
-					<div class="portfolio_item_text">
-						<h3 class="portfolio_item_heading">Vue 2</h3>
-						<div class="portfolio_item_desc">Vue.js</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 portfolio_item mix portfolio_webdesign" style='background-image: url("wp-content/themes/darta/assets/img/works_item_8.png")'>
-					<div class="portfolio_item_text">
-						<h3 class="portfolio_item_heading">Web Design 2</h3>
-						<div class="portfolio_item_desc">Web design</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>

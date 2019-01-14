@@ -22,51 +22,28 @@ $subheading = get_field('subheading');
 				</div>
 			</div>
 			<div class="row blog_block">
-				<div class="col-lg-6 blog_item">
-					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_1.jpg');">
-					</div>
-					<div class="blog_item_text">
-						<a class="blog_item_category" href="#">art / t-shirt</a>
-						<h3 class="blog_item_heading">T-SHIRT DESIGN</h3>
-						<div class="blog_item_text_box">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
+				<?php
+				$args = array( 'posts_per_page' => 4, );
+				$query = new WP_Query( $args );
+				
+				if ( $query -> have_posts() ) : while (  $query -> have_posts() ) :  $query -> the_post(); setup_postdata( $post ) ?>
+					<div class="col-lg-6 blog_item">
+						<div class="blog_item_image" style="background-image:url( <?php echo get_the_post_thumbnail_url($post->ID); ?> )"></div>
+
+						<div class="blog_item_text">
+							<div class="blog_item_category"><?php the_category( ' ' ); ?></div>
+							<h3 class="blog_item_heading"><?php the_title(); ?></h3>
+							<div class="blog_item_text_box">
+								<?php the_excerpt(); ?>
+							</div>
+							<a href="<?php the_permalink(); ?>">Read More &gt;&gt;</a>
 						</div>
-						<a class="read_more" href="#">Read More &gt;&gt;</a>
 					</div>
+				<?php endwhile; else: ?>
+				<div class="col-12 text-center">
+				<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 				</div>
-				<div class="col-lg-6 blog_item">
-					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_2.jpg');"></div>
-					<div class="blog_item_text">
-						<a class="blog_item_category" href="#">art / t-shirt</a>
-						<h3 class="blog_item_heading">T-SHIRT DESIGN</h3>
-						<div class="blog_item_text_box">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-						</div>
-						<a href="#">Read More &gt;&gt;</a>
-					</div>
-				</div>
-				<div class="col-lg-6 blog_item">
-					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_3.jpg');"></div>
-					<div class="blog_item_text">
-						<a class="blog_item_category" href="#">art / t-shirt</a>
-						<h3 class="blog_item_heading">T-SHIRT DESIGN</h3>
-						<div class="blog_item_text_box">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-						</div>
-						<a href="#">Read More &gt;&gt;</a>
-					</div>
-				</div>
-				<div class="col-lg-6 blog_item">
-					<div class="blog_item_image" style="background-image: url('wp-content/themes/darta/assets/img/blog_item_4.jpg');"></div>
-					<div class="blog_item_text">
-						<a class="blog_item_category" href="#">art / t-shirt</a>
-						<h3 class="blog_item_heading">T-SHIRT DESIGN</h3>
-						<div class="blog_item_text_box">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.</p>
-						</div>
-						<a href="#">Read More &gt;&gt;</a>
-					</div>
-				</div>
+				<?php endif; wp_reset_postdata(); ?>
 			</div>
 		</div>
 	</div>

@@ -92,5 +92,7 @@ add_filter( 'script_loader_tag', 'darta_script_loader_tag', 10, 2 );
 
 
 include_once 'includes/acf_reg_blocks.php';
+include_once 'includes/post_types.php';
+include_once 'includes/taxonomy_reg.php';
 
 ?>

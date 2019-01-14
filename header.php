@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php wp_head(); ?>
 		<title><?php wp_title(); ?></title>
 	</head>
-<body>
+<body <?php body_class(); ?>>
 	<header id="header">
 		<div class="row justify-content-center">
 			<div class="col-md-3 col-4">
@@ -24,3 +24,4 @@
 			</div>
 		</div>	
 	</header>
+	<div id="content" class="site-content">
