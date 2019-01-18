@@ -1,11 +1,3 @@
-<?php
-/**
- * Block Name: Portfolio
- *
- * This is the template that displays the portfolio block.
- */
-
-?>
 <section>
 	<div class="portfolio_section" id="portfolio">
 		<div class="container-fluid">

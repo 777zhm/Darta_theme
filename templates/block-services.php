@@ -1,14 +1,4 @@
-<?php
-/**
- * Block Name: Services
- *
- * This is the template that displays the services block.
- */
-
-$image = get_field('image');
-$heading = get_field('heading');
-
-?>
+<?php $image = get_field('image'); ?>
 
 
 <section>
@@ -16,18 +6,14 @@ $heading = get_field('heading');
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-7 text-right services_block">
-					<h2 class="section_heading right_red_border services_heading"><?php echo $heading; ?></h2>
+					<h2 class="section_heading right_red_border services_heading"><?php the_field('heading'); ?></h2>
 					<?php if( have_rows('services') ): ?>
 						<?php while( have_rows('services') ): the_row(); 
-							// vars
-							$icon = get_sub_field('icon');
-							$subheading = get_sub_field('subheading');
-							$editor = get_sub_field('editor');
-						?>
+							$icon = get_sub_field('icon'); ?>
 						<div class="row service_item">
 							<div class="col service_item_text">
-								<h3 class="service_item_heading"><?php echo $subheading; ?></h3>
-								<?php echo $editor; ?>
+								<h3 class="service_item_heading"><?php the_sub_field('subheading'); ?></h3>
+								<?php the_sub_field('editor'); ?>
 							</div>
 							<div class="service_item_icon_box">
 								<div class="circle_decorative">

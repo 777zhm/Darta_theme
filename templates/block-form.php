@@ -1,22 +1,11 @@
-<?php
-/**
- * Block Name: Form
- *
- * This is the template that displays the form block.
- */
-
-$heading = get_field('heading');
-$subheading = get_field('subheading');
-
-?>
 <section>
 	<div class="form_section" id="form">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="price_header text-center">
-						<h2 class="section_heading"><?php echo $heading; ?></h2>
-						<p><?php echo $subheading; ?></p>
+						<h2 class="section_heading"><?php the_field('heading'); ?></h2>
+						<p><?php the_field('subheading'); ?></p>
 						<div class="title_dot"></div>
 					</div>
 				</div>
@@ -25,14 +14,10 @@ $subheading = get_field('subheading');
 				<?php if( have_rows('contacts') ): ?>
 				<div class="col-lg-5 col-md-6 equal">
 					<div class="contact_box">
-					<?php while( have_rows('contacts') ): the_row(); 
-						// vars
-						$heading = get_sub_field('heading');
-						$editor = get_sub_field('editor');
-					?>
+					<?php while( have_rows('contacts') ): the_row(); ?>
 						<div class="contact_item">
-							<h3><?php echo $heading; ?></h3>
-							<?php echo $editor; ?>
+							<h3><?php the_sub_field('heading'); ?></h3>
+							<?php the_sub_field('editor'); ?>
 						</div>
 					<?php endwhile; ?>
 					</div>

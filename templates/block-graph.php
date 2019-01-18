@@ -1,19 +1,8 @@
-<?php
-/**
- * Block Name: Graph
- *
- * This is the template that displays the graph block.
- */
-
-$heading = get_field('heading');
-$subheading = get_field('subheading');
-
-?>
 <section>
 	<div class="graph_section" id="graph">
 		<div class="text-center">
-			<h2 class="section_heading"><?php echo $heading; ?></h2>
-			<p class="section_subheading"><?php echo $subheading; ?></p>
+			<h2 class="section_heading"><?php the_field('heading'); ?></h2>
+			<p class="section_subheading"><?php the_field('subheading'); ?></p>
 			<div class="title_dot"></div>
 		</div>
 		<div class="timeline_box">
@@ -32,17 +21,13 @@ $subheading = get_field('subheading');
 				<?php if( have_rows('persons') ): ?>
 				<div class="timeline_items">
 					<?php while( have_rows('persons') ): the_row(); 
-					// vars
-					$name = get_sub_field('name');
-					$ocupation = get_sub_field('ocupation');
 					$icon = get_sub_field('icon');
-					
 					?>
 					<div class="timeline_item">
 						<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
 						<div class="timeline_item_text">
-							<h4><?php echo $name; ?></h4>
-							<p><?php echo $ocupation; ?></p>
+							<h4><?php the_sub_field('name'); ?></h4>
+							<p><?php the_sub_field('ocupation'); ?></p>
 						</div>
 					</div>
 					<?php endwhile; ?>

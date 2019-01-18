@@ -1,10 +1,3 @@
-<?php
-/**
- * Block Name: Slider
- *
- * This is the template that displays the slider block.
- */
-?>
 <section>
 	<div class="slider_section">
 		<div class="container">

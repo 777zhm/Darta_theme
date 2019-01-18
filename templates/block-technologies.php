@@ -1,23 +1,11 @@
-<?php
-/**
- * Block Name: Technologies
- *
- * This is the template that displays the technologies block.
- */
-
-
-$heading = get_field('heading');
-$subheading = get_field('subheading');
-?>
-
 <section>
 	<div class="technologies_section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7 col-md-9 col-sm-11">
 					<div class="technologies_header text-center">
-						<h2 class="section_heading"><?php echo $heading; ?></h2>
-						<p><?php echo $subheading; ?></p>
+						<h2 class="section_heading"><?php the_field('heading'); ?></h2>
+						<p><?php the_field('subheading'); ?></p>
 						<div class="title_dot"></div>
 					</div>
 				</div>

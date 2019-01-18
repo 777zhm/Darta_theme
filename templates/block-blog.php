@@ -1,22 +1,11 @@
-<?php
-/**
- * Block Name: Blog
- *
- * This is the template that displays the blog block.
- */
-
-$heading = get_field('heading');
-$subheading = get_field('subheading');
-
-?>
 <section>
 	<div class="blog_section">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
 					<div class="text-center">
-						<h2 class="section_heading"><?php echo $heading; ?></h2>
-						<p class="section_subheading"><?php echo $subheading; ?></p>
+						<h2 class="section_heading"><?php the_field('heading'); ?></h2>
+						<p class="section_subheading"><?php the_field('subheading'); ?></p>
 						<div class="title_dot"></div>
 					</div>
 				</div>
