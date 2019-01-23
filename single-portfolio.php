@@ -2,11 +2,11 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
+				<?php get_template_part( 'templates/content', 'portfolio' ); ?>
 			<?php endwhile; else : ?>
-				<?php get_template_part( 'templates/content', 'none' ); ?>
+				<h2><?php _e( '404', 'darta' ); ?></h2>
+				<p><?php esc_html_e( 'Sorry! No content found. as post type', 'darta' ); ?></p>
 			<?php endif; ?>
-			<p>Template: single-portfolio.php</p>
 		</main>
 	</div>
 <?php get_footer(); ?>

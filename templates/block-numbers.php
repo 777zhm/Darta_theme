@@ -18,9 +18,11 @@
 				?>
 					<div class="col-md-2 col-4">
 						<div class="numbers_item_box">
+							<?php if($icon): ?>
 							<div class="numbers_item_icon_box">
 								<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'] ?>" />
 							</div>
+							<?php endif; ?>
 							<div class="numbers_item_number">
 								<?php the_sub_field('amount'); ?>
 							</div>

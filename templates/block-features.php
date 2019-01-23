@@ -8,11 +8,13 @@
 				?>
 				<div class="col-md-3 col-sm-6 features_item">
 				 <div class="feutures_item_icon_block">
+				 	<?php if($icon): ?>
 					<div class="features_item_icon_box">
 						<div class="features_item_icon">
 							<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'] ?>">
 						</div>
 					</div>
+					<?php endif; ?>
 						<h3 class="features_item_heading"><?php the_sub_field('heading'); ?></h3>
 					</div>
 					<p class="features_item_text"><?php the_sub_field('editor'); ?></p>

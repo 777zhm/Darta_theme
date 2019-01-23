@@ -23,7 +23,9 @@
 									<div class="square_decorative_box">
 										<div class="square_decorative">
 											<div class="square_icon_box">
+												<?php if($icon): ?>
 												<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+												<?php endif; ?>
 											</div>
 										</div>
 									</div>

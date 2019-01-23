@@ -19,12 +19,16 @@
 				?>
 				<div class="col-md-2 col-4 technology_item_box">
 					<div class="technology_item">
+						<?php if($logotype): ?>
 						<div class="normal_img">
 							<img class="img img-fluid" src="<?php echo $logotype['url']; ?>" alt="<?php echo $logotype['alt']; ?>" />
 						</div>
+						<?php endif; ?>
+						<?php if($logotype_gray): ?> 
 						<div class="grey_img">
 							<img class="img img-fluid" src="<?php echo $logotype_gray['url']; ?>" alt="<?php echo $logotype_gray['alt'] ?>" >
 						</div>
+						<?php endif; ?>
 					</div>
 				</div>
 				<?php endwhile; ?>

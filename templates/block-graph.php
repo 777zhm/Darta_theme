@@ -24,7 +24,9 @@
 					$icon = get_sub_field('icon');
 					?>
 					<div class="timeline_item">
+						<?php if($icon): ?>
 						<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+						<?php endif; ?>
 						<div class="timeline_item_text">
 							<h4><?php the_sub_field('name'); ?></h4>
 							<p><?php the_sub_field('ocupation'); ?></p>

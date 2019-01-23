@@ -28,7 +28,7 @@
 			<div class="text-center triangle_box">
 				<div class="two_triangles">
 					<div class="circle_decorative" id="circle_decorative_anchor">
-						<img class="circle_decorative_icon" src="<?php echo get_template_directory_uri().'/assets/img/mainscreen_icon_1.png'?>" alt="mainscreen_icon_1">
+						<img class="circle_decorative_icon" src="<?php assets_url('img/mainscreen_icon_1.png') ?>" alt="mainscreen_icon_1">
 					</div>
 				</div>
 			</div>

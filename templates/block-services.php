@@ -1,6 +1,4 @@
 <?php $image = get_field('image'); ?>
-
-
 <section>
 	<div class="services_section">
 		<div class="container-fluid">
@@ -17,10 +15,11 @@
 							</div>
 							<div class="service_item_icon_box">
 								<div class="circle_decorative">
+									<?php if($icon): ?>
 									<img class="circle_decorative_icon" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+									<?php endif; ?>
 								</div>
 							</div>
-						
 						</div>
 						<?php endwhile; ?>	
 					<?php endif; ?>					
