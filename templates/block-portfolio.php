@@ -30,8 +30,11 @@
 			<?php $posts = get_posts( array('post_type'=> 'portfolio', 'numberposts' => -1, ) ) ;?>
 			<?php if( !empty($posts ) ){ ?>
 			<div class="row justify-content-center mixitup_container">
+
 				<?php foreach( $posts as $post ){ ?>
-				<div class="col-lg-3 col-md-4 col-sm-6 col-12 portfolio_item mix portfolio_wordpress" style="background-image:url( <?php echo get_the_post_thumbnail_url($post->ID); ?> )">
+
+
+				<div class="col-lg-3 col-md-4 col-sm-6 col-12 portfolio_item mix portfolio_termid-here" style="background-image:url( <?php echo get_the_post_thumbnail_url($post->ID); ?> )">
 					<div class="portfolio_item_text">
 						<h3 class="portfolio_item_heading"><?php  echo $post->post_title; ?></h3>
 						<div class="portfolio_item_desc"><?php  echo $post->post_content; ?></div>
