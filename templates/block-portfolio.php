@@ -13,19 +13,16 @@
 			<div class="row">
 				<div class="col-12 text-center">
 					<div class="portfolio_menu controls">
-
-					<?php $types = get_terms( array('taxonomy' => 'portfolio_type') );
-					if( !empty($types) ){ ?>
-						<div class="radio">
-							<input name="portfolio_item_radio" id="portfolio_<?php echo $type->term_id; ?>" type="radio" value="<?php echo $type->term_id; ?>" checked/><label class="radio-label" for="portfolio_<?php echo $type->term_id; ?>"><?php  echo $type->name; ?></label>
-						</div>
+					<?php $types = get_terms( array('taxonomy' => 'portfolio_types', 'hide_empty' => false,) ); ?>
+					<?php if( !empty($types) ){ ?>
 						<?php foreach( $types as $type ){ ?>
+
 						<div class="radio">
 							<input name="portfolio_item_radio" id="portfolio_<?php echo $type->term_id; ?>" type="radio" value="<?php echo $type->term_id; ?>" checked/><label class="radio-label" for="portfolio_<?php echo $type->term_id; ?>"><?php  echo $type->name; ?></label>
 						</div>
+
 						<?php } ?>
 					<?php } ?>
-
 					</div>
 				</div>
 			</div>

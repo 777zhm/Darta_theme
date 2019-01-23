@@ -3,21 +3,21 @@
 add_action('init', 'create_taxonomy');
 function create_taxonomy(){
 	// список параметров: http://wp-kama.ru/function/get_taxonomy_labels
-	register_taxonomy('taxonomy', array('post'), array(
+	register_taxonomy('portfolio_types', array('post'), array(
 		'label'                 => '', // определяется параметром $labels->name
 		'labels'                => array(
-			'name'              => 'portfolio_types',
-			'singular_name'     => 'Genre',
-			'search_items'      => 'Search Genres',
-			'all_items'         => 'All Genres',
-			'view_item '        => 'View Genre',
-			'parent_item'       => 'Parent Genre',
-			'parent_item_colon' => 'Parent Genre:',
-			'edit_item'         => 'Edit Genre',
-			'update_item'       => 'Update Genre',
-			'add_new_item'      => 'Add New Genre',
-			'new_item_name'     => 'New Genre Name',
-			'menu_name'         => 'Genre',
+			'name'              => 'Portfolio types',
+			'singular_name'     => 'Portfolio types',
+			'search_items'      => 'Search Portfolio types',
+			'all_items'         => 'All Portfolio types',
+			'view_item '        => 'View Portfolio type',
+			'parent_item'       => 'Parent Portfolio type',
+			'parent_item_colon' => 'Parent Portfolio type:',
+			'edit_item'         => 'Edit Portfolio type',
+			'update_item'       => 'Update Portfolio type',
+			'add_new_item'      => 'Add New Portfolio type',
+			'new_item_name'     => 'New Portfolio type Name',
+			'menu_name'         => 'Portfolio types',
 		),
 		'description'           => '', // описание таксономии
 		'public'                => true,
