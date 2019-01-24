@@ -19,6 +19,21 @@
 		</div>
 	</footer>
 	<div class="backtotop_button"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="success_banner" tabindex="-1" role="dialog" aria-labelledby="success_banner_label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="text-center">Your message has been sent</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 	<?php wp_footer(); ?>
 	</body>
 </html>

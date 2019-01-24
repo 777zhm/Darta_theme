@@ -1414,7 +1414,7 @@ a.read_more{
   margin-bottom: 50px;
 }
 
-.formcontact_box{
+.contact_form_box{
   background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1422,7 +1422,7 @@ a.read_more{
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.formcontact input, .formcontact textarea{
+.contact_form input, .contact_form textarea{
   margin-bottom: 30px;
   border: none;
   border-radius: 0px;
@@ -1502,6 +1502,7 @@ textarea{
     margin-bottom: 20px;
   }
 /* End footer */
+
 
 
 /* Media Query */

@@ -11,10 +11,6 @@ add_action('after_setup_theme', function(){
 	) );
 });
 
-function template_url( $pass ){
-    echo get_template_directory_uri().'/'.$pass;
-}
-
 function assets_url( $pass ){
     echo get_template_directory_uri().'/assets/'.$pass;
 }
@@ -106,5 +102,6 @@ add_filter( 'script_loader_tag', 'darta_script_loader_tag', 10, 2 );
 include_once 'includes/acf_reg_blocks.php';
 include_once 'includes/post_types.php';
 include_once 'includes/taxonomy_reg.php';
+include_once 'includes/send.php';
 
 ?>

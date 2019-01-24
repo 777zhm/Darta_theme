@@ -24,35 +24,22 @@
 				</div>
 				<?php endif; ?>
 				<div class="col-lg-5 col-md-6 equal">     
-					<div class="formcontact_box">
-						<form id="formcontact" action="#" method="post" class="formcontact needs-validation" novalidate="">
+					<div class="contact_form_box">
+						<form id="contact_form" action="" method="post" class="contact_form">
 							<div class="row justify-content-center">
 								<div class="col-lg-9 col-10">
-										<input type="text" class="form-control" id="username" name="username" placeholder="Name" required>
-										<div class="invalid-feedback">
-												Type your name
-										</div>
+									<input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name" required>
 								</div>
 								<div class="col-lg-9 col-10">
-										<input type="email" class="form-control" id="useremail" name="useremail" placeholder="Email" required>
-										<div class="invalid-feedback">
-												Type your e-mail.
-										</div>
+									<input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email" required>
 								</div>
 								<div class="col-lg-9 col-10">
-										<input type="tel" class="form-control" id="usersubject" name="usertel" placeholder="Subject" required>
-										<div class="invalid-feedback">
-												The topic of your question
-										</div>
+									<textarea class="form-control user_message" name="user_message" id="user_message" rows="5" maxlength="600" placeholder="Message" required></textarea>
+									<?php global $wp; ?>
+									<input type="hidden"  name="current_page_link" value="<?php echo home_url( $wp->request ); ?>">
 								</div>
 								<div class="col-lg-9 col-10">
-										<textarea class="form-control usertext" name="usertext" id="usertext" rows="5" maxlength="600" placeholder="Message" required></textarea>
-										<div class="invalid-feedback">
-												Describe your question here
-										</div>
-								</div>
-								<div class="col-lg-9 col-10">
-										<button type="submit" class="button first_button">Send message</button>
+									<button type="submit" class="button first_button">Send message</button>
 								</div>
 							</div>
 						</form>
