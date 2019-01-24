@@ -3,7 +3,7 @@
 add_action('init', 'create_taxonomy');
 function create_taxonomy(){
 	// список параметров: http://wp-kama.ru/function/get_taxonomy_labels
-	register_taxonomy('portfolio_types', array('post'), array(
+	register_taxonomy('portfolio_types', array('portfolio'), array(
 		'label'                 => '', // определяется параметром $labels->name
 		'labels'                => array(
 			'name'              => 'Portfolio types',
