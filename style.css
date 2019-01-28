@@ -516,7 +516,21 @@ text-align: right;
 .history_section img{
   padding-right: 30px;
 }
-/* End features_section */
+
+
+
+.single_post_section.history_section{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.single_post_header{
+  position: relative;
+  margin-bottom: 20px;
+}
+/* End history_section */
 /* Start services_section */
 
 .services_block{
@@ -1438,6 +1452,10 @@ textarea{
     background-color: #fff;
     border-bottom-color: #e74e3e;
     box-shadow: 0 0 0 0px rgba(153,153,153,0.25);
+}
+
+.contact_form_box .submit_button_box{
+  margin-top: 30px;
 }
 
 /* End form_section */

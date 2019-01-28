@@ -98,6 +98,17 @@ function darta_script_loader_tag( $tag, $handle ) {
 }
 add_filter( 'script_loader_tag', 'darta_script_loader_tag', 10, 2 );
 
+if( function_exists('acf_add_options_page') ){
+    $parent = acf_add_options_page(array(
+        'page_title'    => 'Theme settings',
+        'menu_title'    => 'Theme settings',
+        'redirect'      => false,
+        'menu_slug'     => 'theme-settings',
+        'post_id' => 'theme_settings',
+        'capability' => 'edit_posts',
+        'position' => 30,
+    ));
+}
 
 include_once 'includes/acf_reg_blocks.php';
 include_once 'includes/post_types.php';

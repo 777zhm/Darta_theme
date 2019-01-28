@@ -38,7 +38,7 @@
 									<?php global $wp; ?>
 									<input type="hidden"  name="current_page_link" value="<?php echo home_url( $wp->request ); ?>">
 								</div>
-								<div class="col-lg-9 col-10">
+								<div class="col-lg-9 col-10 submit_button_box">
 									<button type="submit" class="button first_button">Send message</button>
 								</div>
 							</div>

@@ -1,12 +1,21 @@
-<?php get_header(); ?>
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<?php the_content(); ?>
-		<?php endwhile; else : ?>
-		<h2><?php _e( '404', 'darta' ); ?></h2>
-		<p><?php esc_html_e( 'Sorry! No content found. as post type', 'darta' ); ?></p>
+<?php get_header('post'); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<section>
+			<div class="history_section single_post_section" id="history">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<img class="img img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
+						</div>
+						<div class="col-md-7">
+							<h2 class="section_heading left_red_border"><?php the_title(); ?></h2>
+							<div class="history_text"><?php the_content(); ?></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<?php endwhile; ?>
 		<?php endif; ?>
-	</main>
-</div>
 <?php get_footer(); ?>
